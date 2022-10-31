@@ -52,13 +52,15 @@ namespace Animals.AnimalZoo
                 //Create an object of that type 
                 //Add the object to the ArrayList 
 
-                System.Console.WriteLine("What is your pet's name?");
-                name = Console.ReadLine();
+                //System.Console.WriteLine("What is your pet's name?");
+                //name = Console.ReadLine();
 
                 //Accept the input(s) necessary to instantiate that type of object
 
                 if (typeAnimal == "C")
                 {
+                    System.Console.WriteLine("What is your pet's name?");
+                    name = Console.ReadLine();
                     System.Console.WriteLine("How many mice has your cat killed?");
                     miceKilled = Convert.ToInt32(Console.ReadLine());
                     Pets.Add(new Cat(miceKilled, name));
@@ -66,6 +68,8 @@ namespace Animals.AnimalZoo
                 }
                 else if (typeAnimal == "D")
                 {
+                    System.Console.WriteLine("What is your pet's name?");
+                    name = Console.ReadLine();
                     System.Console.WriteLine("Is your dog friendly? Yes - Y, No - N");
                     askFriendly = Console.ReadLine().ToUpper();
                     if (askFriendly == "Y")

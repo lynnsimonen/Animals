@@ -16,12 +16,12 @@ namespace Animals.AnimalZoo
 
         public override string ToString()
         {
-            return "meow";
+            return $"My cat, {petName}, says \"meow, meow\"";
         }
 
-        public override void animal()
+        public override string SpecialSkill()
         {
-            System.Console.WriteLine($"The cat named, {petName}, says \"meow, meow\".  {petName} has killed {MousesKilled} mice!");
+            return "My cat killed {MousesKilled} mice!";
         }
     }
 }

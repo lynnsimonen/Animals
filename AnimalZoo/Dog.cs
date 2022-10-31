@@ -15,12 +15,12 @@ namespace Animals.AnimalZoo
 
         public override string ToString()
         {
-            return "roof, roof!";
+            return $"My dog, {petName}, says \"roof, roof\"!";
         }
 
-        public override void animal()
+        public override string SpecialSkill()
         {
-            System.Console.WriteLine($"The dog named, {petName}, says \"roof, roof\"!. (Friendly? {Friendly})");
+           return "My dog is friendly? {Friendly}";
         }
     }
 }
