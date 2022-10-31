@@ -7,11 +7,11 @@ namespace Animals.AnimalZoo
 {
     public abstract class Pet
     {
-        protected string Name { get; set; }
+        protected string petName { get; set; }
 
         public Pet(string name)
         {
-            this.Name = name;
+            this.petName = name;
         }
 
     }

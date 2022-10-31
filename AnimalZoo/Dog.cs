@@ -8,14 +8,14 @@ namespace Animals.AnimalZoo
     public class Dog : Pet, ITalkable
     {
         private bool Friendly { get; set; }
-        public Dog(bool friendly, string Name) : base(Name)
+        public Dog(bool friendly, string petName) : base(petName)
         {
             this.Friendly = friendly;
         }
 
         public void talk()
         {
-            System.Console.WriteLine($"The dog named, {Name}, says \"roof, roof\"!. (Friendly? {Friendly})");
+            System.Console.WriteLine($"The dog named, {petName}, says \"roof, roof\"!. (Friendly? {Friendly})");
         }
     }
 }
