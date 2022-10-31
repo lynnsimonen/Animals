@@ -23,10 +23,6 @@ namespace Animals
             } while (answer == "Y");
 
 
-
-
-
-
             // Lines to Replace Begin Here
             //zoo.add(new Dog(true, "Bean"));
             //zoo.add(new Cat(9, "Charlie"));
