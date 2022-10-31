@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Animals.AnimalZoo
 {
-    public class Cat : Pet, ITalkable
+    public class Cat : Pet//, ITalkable
     {
         private int MousesKilled;
         public Cat(int mousesKilled, string petName) : base(petName)
@@ -14,7 +14,12 @@ namespace Animals.AnimalZoo
             this.MousesKilled = mousesKilled;
         }
 
-        public void talk()
+        public override string ToString()
+        {
+            return "meow";
+        }
+
+        public override void animal()
         {
             System.Console.WriteLine($"The cat named, {petName}, says \"meow, meow\".  {petName} has killed {MousesKilled} mice!");
         }

@@ -1,7 +1,9 @@
-namespace Animals.AnimalZoo
-{
-    interface ITalkable
-    {
-        public void talk();
-    }
-}
+// using System;
+
+// namespace Animals.AnimalZoo
+// {
+//     interface ITalkable
+//     {
+//         public void talk();
+//     }
+// }

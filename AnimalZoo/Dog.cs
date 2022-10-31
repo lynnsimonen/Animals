@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Animals.AnimalZoo
 {
-    public class Dog : Pet, ITalkable
+    public class Dog : Pet//, ITalkable
     {
         private bool Friendly { get; set; }
         public Dog(bool friendly, string petName) : base(petName)
@@ -13,7 +13,12 @@ namespace Animals.AnimalZoo
             this.Friendly = friendly;
         }
 
-        public void talk()
+        public override string ToString()
+        {
+            return "roof, roof!";
+        }
+
+        public override void animal()
         {
             System.Console.WriteLine($"The dog named, {petName}, says \"roof, roof\"!. (Friendly? {Friendly})");
         }

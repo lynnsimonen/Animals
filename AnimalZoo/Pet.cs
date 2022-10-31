@@ -14,5 +14,7 @@ namespace Animals.AnimalZoo
             this.petName = name;
         }
 
+        public abstract void animal();
+
     }
 }
