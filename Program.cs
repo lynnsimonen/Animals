@@ -12,8 +12,16 @@ namespace Animals
     {
         static void Main(string[] args)
         {
-         
-           
+            string answer;
+            System.Console.WriteLine("Let's create a pet zoo!!!");
+            do
+            {
+                CreateZoo newZoo = new CreateZoo();
+                newZoo.ZooInfo();
+                System.Console.WriteLine("Would you like to create another new zoo pet?");
+                answer = Console.ReadLine().ToUpper();
+            } while (answer == "Y");
+
 
 
 
