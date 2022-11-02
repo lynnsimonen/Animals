@@ -7,7 +7,7 @@ namespace Animals.AnimalZoo
 {
     public interface ITalkable
     {
-        string talk();
+        string Talk();
         string getName();
     }
 }

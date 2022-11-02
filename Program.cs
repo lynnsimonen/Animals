@@ -27,8 +27,8 @@ namespace Animals
             foreach (ITalkable talker in Zoo)
             {
                 System.Console.WriteLine();
-                System.Console.WriteLine($"{talker.getName()} says =  {talker.talk()}");
-                System.Console.WriteLine($"{talker.getName()}|{talker.talk()}\n---");
+                System.Console.WriteLine($"{talker.getName()} says =  {talker.Talk()}");
+                System.Console.WriteLine($"{talker.getName()}|{talker.Talk()}\n---");
             }
         }
     }

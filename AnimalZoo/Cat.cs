@@ -24,7 +24,7 @@ namespace Animals.AnimalZoo
             MousesKilled++;
         }
 
-        public string talk()
+        public string Talk()
         {
             return "Meow!";
         }

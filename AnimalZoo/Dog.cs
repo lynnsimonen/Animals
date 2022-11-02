@@ -14,7 +14,7 @@ namespace Animals.AnimalZoo
             this.Friendly = friendly;
         }
 
-        public string talk(){
+        public string Talk(){
             return "roof, roof!";
         }
 

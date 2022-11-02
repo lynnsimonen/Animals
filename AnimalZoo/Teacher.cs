@@ -23,7 +23,7 @@ namespace Animals.AnimalZoo
             this.Age = age;
         }
 
-        public string talk()
+        public string Talk()
         {
             return "Don't forget to do the assigned reading!";
         }
