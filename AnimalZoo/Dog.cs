@@ -2,25 +2,31 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Animals.AnimalZoo;
 
 namespace Animals.AnimalZoo
 {
-    public class Dog : Pet//, ITalkable
+    public class Dog : Pet, ITalkable
     {
-        private bool Friendly { get; set; }
-        public Dog(bool friendly, string petName) : base(petName)
+        public bool Friendly { get; set; }
+        public Dog(bool friendly, string name) : base(name)
         {
             this.Friendly = friendly;
         }
 
-        public override string ToString()
-        {
-            return $"My dog, {petName}, says \"roof, roof\"!";
+        public string talk(){
+            return "roof, roof!";
         }
 
-        public override string SpecialSkill()
+
+        public bool IsFriendly()
         {
-           return "My dog is friendly? {Friendly}";
+            return Friendly;
+        }
+
+        public override string ToString()
+        {
+           return $"Dog: name={Name}, friendly={Friendly} ";
         }
     }
 }

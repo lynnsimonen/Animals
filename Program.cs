@@ -1,4 +1,5 @@
-﻿using System.Reflection;
+﻿using System.Xml.Linq;
+using System.Reflection;
 using System.Collections;
 using System;
 using System.Collections.Generic;
@@ -13,15 +14,21 @@ namespace Animals
     {
         static void Main(string[] args)
         {
-            System.Console.WriteLine("Let's create a pet zoo!!!");
+            System.Console.WriteLine("\nLet's create a talking zoo!!!\n");
 
-            CreateZoo newZoo = new CreateZoo();
-            List<Pet> Pets = newZoo.ZooInfo();
+            List<ITalkable> Zoo = new List<ITalkable>();
 
-            foreach (var pet in Pets)
+            // Lines to Replace Begin Here
+            Zoo.Add(new Dog(true, "Bean"));
+            Zoo.Add(new Cat(9, "Charlie"));
+            Zoo.Add(new Teacher(44, "Stacy Read"));
+            // End Lines to Replace
+
+            foreach (ITalkable talker in Zoo)
             {
-                System.Console.WriteLine(pet);
-                //System.Console.WriteLine($"{pet.SpecialSkill}");
+                System.Console.WriteLine();
+                System.Console.WriteLine($"{talker.getName()} says =  {talker.talk()}");
+                System.Console.WriteLine($"{talker.getName()}|{talker.talk()}\n---");
             }
         }
     }

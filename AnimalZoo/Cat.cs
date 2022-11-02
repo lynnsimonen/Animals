@@ -6,22 +6,34 @@ using System.Threading.Tasks;
 
 namespace Animals.AnimalZoo
 {
-    public class Cat : Pet//, ITalkable
+    public class Cat : Pet, ITalkable
     {
         private int MousesKilled;
-        public Cat(int mousesKilled, string petName) : base(petName)
+        public Cat(int mousesKilled, string name) : base(name)
         {
             this.MousesKilled = mousesKilled;
         }
 
-        public override string ToString()
+        public int getMousesKilled()
         {
-            return $"My cat, {petName}, says \"meow, meow\"";
+            return MousesKilled;
         }
 
-        public override string SpecialSkill()
+        public void addMouse()
         {
-            return "My cat killed {MousesKilled} mice!";
+            MousesKilled++;
+        }
+
+        public string talk()
+        {
+            return "Meow!";
+        }
+
+
+        public override String ToString()
+        {
+            return $"Cat: name={Name}, mousesKilled={MousesKilled}";
         }
     }
+
 }

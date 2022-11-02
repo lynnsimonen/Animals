@@ -5,11 +5,11 @@ using System.Threading.Tasks;
 
 namespace Animals.AnimalZoo
 {
-    public abstract class Pet
+    public abstract class Person
     {
         protected string Name { get; set; }
 
-        public Pet(string name)
+        public Person(string name)
         {
             this.Name = name;
         }
@@ -18,6 +18,5 @@ namespace Animals.AnimalZoo
         {
             return Name;
         }
-
     }
 }
